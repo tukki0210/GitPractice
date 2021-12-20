@@ -9,5 +9,7 @@
     <body>
         <div id="app"></div>
         <script src="js/app.js"></script>
+
+        <div><a href="{{route('age')}}">年代表示</a></div>
     </body>
 </html>
