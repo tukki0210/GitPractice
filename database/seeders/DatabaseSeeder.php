@@ -15,5 +15,8 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         $this->call(AgeSeeder::class);
+        $this->call(DateSeeder::class);
+        // $this->call(EventSeeder::class);
+        // $this->call(WordSeeder::class);
     }
 }

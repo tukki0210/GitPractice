@@ -15,7 +15,7 @@ class CreateAgesTable extends Migration
     {
         Schema::create('ages', function (Blueprint $table) {
             $table->id();
-            $table->string('age');
+            $table->string('age')->unique();
             $table->timestamps();
         });
     }

@@ -15,7 +15,12 @@ class CreateDatesTable extends Migration
     {
         Schema::create('dates', function (Blueprint $table) {
             $table->id();
+            $table->string('date');
+            $table->string('month');
+            $table->string('age');
             $table->timestamps();
+
+            $table->foreign('age')->references('age')->on('ages')->onDelete('cascade');
         });
     }
 
